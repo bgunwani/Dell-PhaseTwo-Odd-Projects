@@ -1,0 +1,31 @@
+
+Working with Database: Microsoft SQL Server
+
+1. Local Server
+2. SSMS (SQL Server Management Studio)
+
+------------------------------------------------
+
+Constraints in SQL Server:
+
+	- Primary Key: No Null Values, No Duplicate Values
+	- Not Null: No Null Values
+	- Unique: No Duplicate Values
+	- Check: Restrict the data with conditions
+	- Foreign Key: Helps in creating referencial Integrity b/w tables
+	- Default: To set default values
+	
+------------------------------------------------
+	
+Joins in SQL Server:
+
+	- Inner Join / Equi Join / Default Join
+	- Outer Join:
+		- Left Outer Join
+		- Right Outer Join
+		- Full Outer Join
+	- Self Join
+	- Cross Join
+	- Joining Tables without Join Keyword
+	
+-------------------------------------------------
