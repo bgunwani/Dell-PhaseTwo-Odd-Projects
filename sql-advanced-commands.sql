@@ -178,4 +178,102 @@
 	SELECT * FROM Employee;
 	SELECT * FROM Department;
 	
+-- Add New Column into existing table `Employee`
+
+	ALTER TABLE Employee
+	ADD ManagerId INT;
+
+	ALTER TABLE Employee
+	DROP COLUMN ManagerId;
+
+-- Update ManagerId based upon their profile
+
+	UPDATE Employee
+	SET ManagerId = 5001
+	WHERE EmpId IN (5002, 5005, 5006)
+
+	UPDATE Employee
+	SET ManagerId = 5001
+	WHERE EmpId = 5003;
+
+	UPDATE Employee
+	SET ManagerId = 5002
+	WHERE EmpId = 5004;
+
+	UPDATE Employee
+	SET ManagerId = 5005
+	WHERE EmpId = 5007;
+
+	UPDATE Employee
+	SET ManagerId = 5006
+	WHERE EmpId = 5008;
+
+-- SELF JOIN: Retrieve Employee and their Manager Name
+
+	SELECT emp.EmpName EmployeeName, mgr.EmpName ManagerName
+	FROM Employee emp JOIN Employee mgr 
+	ON emp.ManagerId = mgr.EmpId
+
+-- CROSS JOIN: Each Record of Left Table gets Multiplied by Each Record of Right Table
+
+/* CROSS JOIN gets applied implicitly when:
+	- A Join Condition Ommitted.
+	- A Join Condition is incorrect. */
+
+	SELECT emp.EmpId, emp.EmpName, dept.DeptId, dept.DeptName
+	FROM Employee emp CROSS JOIN Department dept
+
+	SELECT emp.EmpName EmployeeName, mgr.EmpName ManagerName
+	FROM Employee emp JOIN Employee mgr 
+	ON mgr.ManagerId = emp.ManagerId
+
+	SELECT * FROM Department;
+	SELECT * FROM Employee;
+
+-- Joining Tables without Join Keyword
+
+	SELECT e.EmpName, d.DeptName
+	FROM Employee e, Department d
+	WHERE e.DeptId = d.DeptId
+
+-- Joining Tables with Join Keyword
+
+	SELECT e.EmpName, d.DeptName
+	FROM Employee e JOIN Department d
+	ON e.DeptId = d.DeptId
+
+
+-- Aggregate Functions
+
+	SELECT SUM(EmpSalary) as TotalSalary FROM Employee;
+	SELECT MAX(EmpSalary)  as MaximumSalary FROM Employee;
+	SELECT MIN(EmpSalary) as MinimumSalary FROM Employee;
+	SELECT AVG(EmpSalary) as AverageSalary FROM Employee;
+	SELECT COUNT(EmpSalary) as TotalEmployees FROM Employee;
+
+	SELECT  COUNT(EmpSalary) as TotalEmployees,
+			SUM(EmpSalary) as TotalSalary,
+			MAX(EmpSalary)  as MaximumSalary,
+			MIN(EmpSalary) as MinimumSalary,
+			AVG(EmpSalary) as AverageSalary FROM Employee;
+
+-- Calculate the Sum of Salary given to each Department  
+
+	SELECT DeptId, SUM(EmpSalary) TotalSalary
+	FROM Employee
+	GROUP BY DeptId
+
+	SELECT * FROM Employee;
+
+-- Calculate the Sum of Salary given to each Manager
+
+	SELECT ManagerId, SUM(EmpSalary) TotalSalary
+	FROM Employee 
+	GROUP BY ManagerId 
+
+-- Calculate the Sum of Salary given to each Departments and Managers
+
+	SELECT DeptId, ManagerId, SUM(EmpSalary) TotalSalary
+	FROM Employee 
+	GROUP BY DeptId, ManagerId	
 
