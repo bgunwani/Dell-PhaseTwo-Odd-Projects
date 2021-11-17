@@ -1,0 +1,60 @@
+
+ASP .NET Core - Web Development
+
+	- New Version of ASP.NET Framework by Microsoft.
+	- Platform Independent that runs the application on different platforms such as Windows, Linux or Mac.
+	- An open source web framework.
+	
+ASP.NET MVC Core (Model-View-Controller):
+
+	.Net Core Application runs on Kestrel Web Server.
+	
+Startup Class:
+
+	- Consist two methods:
+	
+	ConfigureServices(): Helps in Adding Middlewares to the application.
+	
+	Configure(): Helps in Using Middlewares in application.
+	
+-----------------------------------------------
+
+wwwroot folder:
+
+	- By default, this folder is treated as webroot folder.
+	- This folder should be present in root directory.
+	- This folder contains static files for your application such as HTML, CSS, JavaScript, Fonts, Images and so on.
+	- The files and folders from this wwwroot can be accessed as relative path to that root.
+	
+-----------------------------------------------
+
+The UswDefaultFiles() middleware will search wwwroot folder for following files by default:
+
+	index.htm
+	index.html
+	default.htm
+	default.html
+	
+------------------------------------------------
+
+ASP.NET Core MVC Framework:
+
+	MVC - Model-View-Controller
+	- Architectural Design that means a design pattern used at the architectural level of an application.
+	- MVC is not a programming language, MVC is not a framework, it is a design pattern.
+	- MVC helps in creating loosely-coupled architecture based application
+	
+Model:
+
+	A component in MVC pattern which is used to manage data.
+	The model represents a set of classes that is used to describe application validation logic, business logic and data access logic.
+	
+View:
+
+	The view component is used to contain the logic to represent the model data to the user interface. The view is used to render the business data which is provided to it by the controller.
+	
+Controoler:
+
+	A controller is data binder or request handler in MVC pattern. It consists various action methods to which a request comes and handles accordingly.
+
+------------------------------------------------

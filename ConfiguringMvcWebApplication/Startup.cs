@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace WebFundamentals
+namespace ConfiguringMvcWebApplication
 {
     public class Startup
     {
@@ -22,7 +22,8 @@ namespace WebFundamentals
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            // services.AddRazorPages();
+            // Add Middleware for MVC
+            services.AddControllersWithViews();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -37,23 +38,20 @@ namespace WebFundamentals
                 app.UseExceptionHandler("/Error");
             }
 
-            // Specify the Custom Pages as the Default Page
-            DefaultFilesOptions defaultFilesOptions = new DefaultFilesOptions();
-            defaultFilesOptions.DefaultFileNames.Clear();
-            defaultFilesOptions.DefaultFileNames.Add("dashboard.html");
-            defaultFilesOptions.DefaultFileNames.Add("home.html");
-            // Setting the Default Files
-            app.UseDefaultFiles(defaultFilesOptions);
             app.UseStaticFiles();
 
-            // app.UseRouting();
+            app.UseRouting();
 
             // app.UseAuthorization();
 
-            //app.UseEndpoints(endpoints =>
-            //{
-            //    endpoints.MapRazorPages();
-            //});
+            // Configure MVC Endpoints or MVC Routing
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
+            });
+
         }
     }
 }
