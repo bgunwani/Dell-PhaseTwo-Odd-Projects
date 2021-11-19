@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<a asp-controller="Student" asp-action="Create" class="btn btn-secondary">Add New Student</a>
+<br/><br/>
+
+<h2>@ViewBag.Message</h2>
+<br />
+
+<p>There are total @ViewBag.StudentCount students in this competition.</p>
+<br />
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Student Id</th>
+            <th>Name</th>
+            <th>City</th>
+            <th>Gender</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in ViewBag.StudentList)
+        {
+            <tr>
+                <td>@student.StudentId</td>
+                <td>@student.Name</td>
+                <td>@student.City</td>
+                <td>@student.Gender</td>
+            </tr>
+        }
+    </tbody>
+</table>

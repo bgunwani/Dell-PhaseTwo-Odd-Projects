@@ -3,14 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFundamentals", "WebFundamentals\WebFundamentals.csproj", "{B56E6792-DF39-4338-B06E-AA8E7B4B041F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebFundamentals", "WebFundamentals\WebFundamentals.csproj", "{B56E6792-DF39-4338-B06E-AA8E7B4B041F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfiguringMvcWebApplication", "ConfiguringMvcWebApplication\ConfiguringMvcWebApplication.csproj", "{0903BD39-EB20-4A73-BA5B-154B21D66C33}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConfiguringMvcWebApplication", "ConfiguringMvcWebApplication\ConfiguringMvcWebApplication.csproj", "{0903BD39-EB20-4A73-BA5B-154B21D66C33}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{AAC7D2CA-88F0-4DA5-80F9-084A60A05364}"
 	ProjectSection(SolutionItems) = preProject
 		Notes.txt = Notes.txt
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfiguringMVcWebApplicationFinal", "ConfiguringMVcWebApplicationFinal\ConfiguringMVcWebApplicationFinal.csproj", "{1CC70400-D29E-41B1-B9E1-0F9D0D821E2B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +28,10 @@ Global
 		{0903BD39-EB20-4A73-BA5B-154B21D66C33}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0903BD39-EB20-4A73-BA5B-154B21D66C33}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0903BD39-EB20-4A73-BA5B-154B21D66C33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CC70400-D29E-41B1-B9E1-0F9D0D821E2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CC70400-D29E-41B1-B9E1-0F9D0D821E2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CC70400-D29E-41B1-B9E1-0F9D0D821E2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CC70400-D29E-41B1-B9E1-0F9D0D821E2B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
