@@ -12,7 +12,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{AAC7D2CA
 		Notes.txt = Notes.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfiguringMVcWebApplicationFinal", "ConfiguringMVcWebApplicationFinal\ConfiguringMVcWebApplicationFinal.csproj", "{1CC70400-D29E-41B1-B9E1-0F9D0D821E2B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConfiguringMVcWebApplicationFinal", "ConfiguringMVcWebApplicationFinal\ConfiguringMVcWebApplicationFinal.csproj", "{1CC70400-D29E-41B1-B9E1-0F9D0D821E2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "coreMVCConcepts", "coreMVCConcepts\coreMVCConcepts.csproj", "{3551A933-82C1-4D36-8955-9D81793C469F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +34,10 @@ Global
 		{1CC70400-D29E-41B1-B9E1-0F9D0D821E2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1CC70400-D29E-41B1-B9E1-0F9D0D821E2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1CC70400-D29E-41B1-B9E1-0F9D0D821E2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3551A933-82C1-4D36-8955-9D81793C469F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3551A933-82C1-4D36-8955-9D81793C469F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3551A933-82C1-4D36-8955-9D81793C469F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3551A933-82C1-4D36-8955-9D81793C469F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

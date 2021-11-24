@@ -58,3 +58,27 @@ Controoler:
 	A controller is data binder or request handler in MVC pattern. It consists various action methods to which a request comes and handles accordingly.
 
 ------------------------------------------------
+
+
+Data Passing Mechanism from Controller to View and Sometime vice versa:
+
+	1. ViewBag:
+	
+		To transfer data from controller to view and not vice-versa.
+		ViewBag values will be null if redirection occurs.
+		You can assign a primitive or a complex type object to ViewBag.
+		We do not need to typecast ViewBag values before use.
+			
+	2. ViewData
+	
+		To transfer data from controller to view and not vice-versa.
+		ViewBag values will be null if redirection occurs.
+		You can assign a primitive or a complex type object to ViewBag.
+		ViewData value must be typecast to an appropriate type before using it.
+		ViewBag internally inserts the data in ViewData Dictionary.
+		
+	3. TempData
+	
+		To transfer data from view to controller, controller to view, or from one action method to another action method of the same or different controller. TemData request can be persisted for more than one request with the help of Keep() method.
+	
+We can also pass data with Model Binding.

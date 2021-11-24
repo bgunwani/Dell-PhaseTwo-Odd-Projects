@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewData["Title"] = "RequestA";
+}
+
+<h1>Message : @TempData["Msg"]</h1>
+
+@{ 
+    TempData.Keep("Msg");
+}
+
+<a asp-controller="Student" asp-action="RequestB">Request B</a>
+
