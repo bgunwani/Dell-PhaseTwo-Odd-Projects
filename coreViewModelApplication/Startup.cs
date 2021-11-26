@@ -1,4 +1,3 @@
-using coreMVCConcepts.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -9,7 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace coreMVCConcepts
+namespace coreViewModelApplication
 {
     public class Startup
     {
@@ -24,25 +23,6 @@ namespace coreMVCConcepts
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-
-            services.Add(new ServiceDescriptor(typeof(IEmployeeRepository), 
-                new EmployeeRepository())); // By Default Singleton IOC
-
-            /*
-            services.Add(new ServiceDescriptor(typeof(IEmployeeRepository),
-                typeof(EmployeeRepository), ServiceLifetime.Singleton));    // Singleton
-            services.Add(new ServiceDescriptor(typeof(IEmployeeRepository),
-                typeof(EmployeeRepository), ServiceLifetime.Transient));    // Transient
-            services.Add(new ServiceDescriptor(typeof(IEmployeeRepository),
-                typeof(EmployeeRepository), ServiceLifetime.Scoped));    // Scoped
-            */
-
-            // Application Service with Extension Methods
-            /*
-            services.AddSingleton<IEmployeeRepository, EmployeeRepository>();
-            services.AddTransient<IEmployeeRepository, EmployeeRepository>();
-            services.AddScoped<IEmployeeRepository, EmployeeRepository>();
-            */
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

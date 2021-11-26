@@ -1,14 +1,13 @@
-﻿
-@model IEnumerable<coreMVCConcepts.Models.Employee>
+﻿@model IEnumerable<coreMVCConcepts.Models.Employee>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "GetEmployees";
 }
 
-<h1>Index</h1>
+<h1>GetEmployees</h1>
 
 <p>
-    <a asp-controller="Employee" asp-action="Create">Create New</a>
+    <a asp-action="Create">Create New</a>
 </p>
 <table class="table">
     <thead>
@@ -45,7 +44,7 @@
             </td>
             <td>
                 @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { id = item.EmployeeId }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
                 @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
             </td>
         </tr>
