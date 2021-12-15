@@ -22,7 +22,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "coreSessionManagementApplic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "coreCodeFirstApproachApplication", "coreCodeFirstApproachApplication\coreCodeFirstApproachApplication.csproj", "{2D5D2C44-2843-4190-95C1-9F996EB03618}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "coreCodeFirstApproachRelationshipsApplication", "coreCodeFirstApproachRelationshipsApplication\coreCodeFirstApproachRelationshipsApplication.csproj", "{FE8C5A60-581B-4C1B-B677-C78B7FF3CE10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "coreCodeFirstApproachRelationshipsApplication", "coreCodeFirstApproachRelationshipsApplication\coreCodeFirstApproachRelationshipsApplication.csproj", "{FE8C5A60-581B-4C1B-B677-C78B7FF3CE10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "coreDatabaseFirstApproachApplication", "coreDatabaseFirstApproachApplication\coreDatabaseFirstApproachApplication.csproj", "{3E209F9A-A12A-4E2C-9A08-9BBA07CAFC8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "coreDBFirstRelationshipApplication", "coreDBFirstRelationshipApplication\coreDBFirstRelationshipApplication.csproj", "{2F46B626-4FE4-4B5F-88FB-658D48D54CBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "coreWebAPIFundamentals", "coreWebAPIFundamentals\coreWebAPIFundamentals.csproj", "{A7443D2B-3315-45C6-A4A5-DF6B8CA7362D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -62,6 +68,18 @@ Global
 		{FE8C5A60-581B-4C1B-B677-C78B7FF3CE10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE8C5A60-581B-4C1B-B677-C78B7FF3CE10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE8C5A60-581B-4C1B-B677-C78B7FF3CE10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E209F9A-A12A-4E2C-9A08-9BBA07CAFC8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E209F9A-A12A-4E2C-9A08-9BBA07CAFC8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E209F9A-A12A-4E2C-9A08-9BBA07CAFC8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E209F9A-A12A-4E2C-9A08-9BBA07CAFC8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F46B626-4FE4-4B5F-88FB-658D48D54CBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F46B626-4FE4-4B5F-88FB-658D48D54CBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F46B626-4FE4-4B5F-88FB-658D48D54CBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F46B626-4FE4-4B5F-88FB-658D48D54CBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7443D2B-3315-45C6-A4A5-DF6B8CA7362D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7443D2B-3315-45C6-A4A5-DF6B8CA7362D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7443D2B-3315-45C6-A4A5-DF6B8CA7362D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7443D2B-3315-45C6-A4A5-DF6B8CA7362D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
