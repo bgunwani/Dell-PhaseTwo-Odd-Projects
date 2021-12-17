@@ -24,11 +24,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "coreCodeFirstApproachApplic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "coreCodeFirstApproachRelationshipsApplication", "coreCodeFirstApproachRelationshipsApplication\coreCodeFirstApproachRelationshipsApplication.csproj", "{FE8C5A60-581B-4C1B-B677-C78B7FF3CE10}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "coreDatabaseFirstApproachApplication", "coreDatabaseFirstApproachApplication\coreDatabaseFirstApproachApplication.csproj", "{3E209F9A-A12A-4E2C-9A08-9BBA07CAFC8A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "coreDatabaseFirstApproachApplication", "coreDatabaseFirstApproachApplication\coreDatabaseFirstApproachApplication.csproj", "{3E209F9A-A12A-4E2C-9A08-9BBA07CAFC8A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "coreDBFirstRelationshipApplication", "coreDBFirstRelationshipApplication\coreDBFirstRelationshipApplication.csproj", "{2F46B626-4FE4-4B5F-88FB-658D48D54CBD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "coreDBFirstRelationshipApplication", "coreDBFirstRelationshipApplication\coreDBFirstRelationshipApplication.csproj", "{2F46B626-4FE4-4B5F-88FB-658D48D54CBD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "coreWebAPIFundamentals", "coreWebAPIFundamentals\coreWebAPIFundamentals.csproj", "{A7443D2B-3315-45C6-A4A5-DF6B8CA7362D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "coreWebAPIFundamentals", "coreWebAPIFundamentals\coreWebAPIFundamentals.csproj", "{A7443D2B-3315-45C6-A4A5-DF6B8CA7362D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vendorWebAPIApplication", "vendorWebAPIApplication\vendorWebAPIApplication.csproj", "{D0EF889C-22A0-45C2-BD4A-1E74FCB7CC7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "clientWebAPIApplication", "clientWebAPIApplication\clientWebAPIApplication.csproj", "{DC7E0E86-D52D-44CF-95A9-272584809E48}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -80,6 +84,14 @@ Global
 		{A7443D2B-3315-45C6-A4A5-DF6B8CA7362D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7443D2B-3315-45C6-A4A5-DF6B8CA7362D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7443D2B-3315-45C6-A4A5-DF6B8CA7362D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0EF889C-22A0-45C2-BD4A-1E74FCB7CC7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0EF889C-22A0-45C2-BD4A-1E74FCB7CC7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0EF889C-22A0-45C2-BD4A-1E74FCB7CC7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0EF889C-22A0-45C2-BD4A-1E74FCB7CC7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC7E0E86-D52D-44CF-95A9-272584809E48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC7E0E86-D52D-44CF-95A9-272584809E48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC7E0E86-D52D-44CF-95A9-272584809E48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC7E0E86-D52D-44CF-95A9-272584809E48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
