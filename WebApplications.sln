@@ -30,9 +30,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "coreDBFirstRelationshipAppl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "coreWebAPIFundamentals", "coreWebAPIFundamentals\coreWebAPIFundamentals.csproj", "{A7443D2B-3315-45C6-A4A5-DF6B8CA7362D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vendorWebAPIApplication", "vendorWebAPIApplication\vendorWebAPIApplication.csproj", "{D0EF889C-22A0-45C2-BD4A-1E74FCB7CC7B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "vendorWebAPIApplication", "vendorWebAPIApplication\vendorWebAPIApplication.csproj", "{D0EF889C-22A0-45C2-BD4A-1E74FCB7CC7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "clientWebAPIApplication", "clientWebAPIApplication\clientWebAPIApplication.csproj", "{DC7E0E86-D52D-44CF-95A9-272584809E48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "clientWebAPIApplication", "clientWebAPIApplication\clientWebAPIApplication.csproj", "{DC7E0E86-D52D-44CF-95A9-272584809E48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "coreShoppingCartApplication", "coreShoppingCartApplication\coreShoppingCartApplication.csproj", "{A2E99C48-5119-4166-9A71-60A642836638}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -92,6 +94,10 @@ Global
 		{DC7E0E86-D52D-44CF-95A9-272584809E48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC7E0E86-D52D-44CF-95A9-272584809E48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC7E0E86-D52D-44CF-95A9-272584809E48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2E99C48-5119-4166-9A71-60A642836638}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2E99C48-5119-4166-9A71-60A642836638}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2E99C48-5119-4166-9A71-60A642836638}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2E99C48-5119-4166-9A71-60A642836638}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
